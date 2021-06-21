@@ -9,7 +9,10 @@ class Fhhgb(MycroftSkill):
     def handle_fhhgb(self, message):
         self.speak_dialog('fhhgb')
 
+    @intent_file_handler('fhhgbDegProg.intent')
+    def handle_fhhgb(self, message):
+        self.speak_dialog('fhhgbDegProg')
+
 
 def create_skill():
     return Fhhgb()
-
